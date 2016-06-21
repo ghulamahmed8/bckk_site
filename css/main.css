@@ -2,19 +2,20 @@
 Styles For Main Page goes here
 */
 
-/*top navbar container*/
+/*navbar container*/
 .nav-container{
-    background-color: #11226f;
+    background-color: #000059;
 }
 /*override default link color in navbars*/
-.navbar-nav a{
+.navbar-nav > li > a{
     color: #fff !important;
 }
-/*override default link hover and visited background*/
-.navbar-nav a:hover,
-.navbar-nav a:visited{
+/*override default nav link hover and visited background*/
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:visited{
     background-color: #7C7D75 !important;
 }
+
 /*header containing title*/
 .header{
     margin: 0;
@@ -39,5 +40,13 @@ Styles For Main Page goes here
 }
 .navbar-header .navbar-toggle:hover .icon-bar,
  .navbar-header .navbar-toggle:focus .icon-bar{
-    background-color: #11226f;
+    background-color: #000059;
 }
+
+
+/*overrides in smaller screens*/
+@media only screen and (max-width: 768px){
+    .dropdown-menu a:hover{
+        color: #fff !important;
+    }
+} 
