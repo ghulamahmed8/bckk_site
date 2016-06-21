@@ -57,4 +57,11 @@ Styles For Main Page goes here
     .dropdown-menu a:hover{
         color: #fff !important;
     }
+    .navbar-right{
+        float: right;    
+        margin: 0;
+    }
+    .navbar-right li{
+        display: inline-block;
+    }
 } 
