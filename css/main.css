@@ -42,8 +42,11 @@ Styles For Main Page goes here
  .navbar-header .navbar-toggle:focus .icon-bar{
     background-color: #000059;
 }
-
-
+/*fixed: last dropdown-menu in main nav overflows if screen is not wide enough(not in mobiles)*/
+.main-nav li:last-child .dropdown-menu{
+    left: auto; 
+    right: 0;
+}
 /*overrides in smaller screens*/
 @media only screen and (max-width: 768px){
     .dropdown-menu a:hover{
