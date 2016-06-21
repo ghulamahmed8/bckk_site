@@ -1,3 +1,43 @@
 /*
 Styles For Main Page goes here
 */
+
+/*top navbar container*/
+.nav-container{
+    background-color: #11226f;
+}
+/*override default link color in navbars*/
+.navbar-nav a{
+    color: #fff !important;
+}
+/*override default link hover and visited background*/
+.navbar-nav a:hover,
+.navbar-nav a:visited{
+    background-color: #7C7D75 !important;
+}
+/*header containing title*/
+.header{
+    margin: 0;
+    text-align: center;
+}
+.header h1{
+    display: inline;
+    padding: 0 1em;
+    vertical-align: middle;
+}
+.header img{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+/*main navigation*/
+
+/*change default color of menu button which shows on mobile*/
+.navbar-header .navbar-toggle{
+    border-color: #fff;
+}
+.navbar-header .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+.navbar-header .navbar-toggle:hover .icon-bar,
+ .navbar-header .navbar-toggle:focus .icon-bar{
+    background-color: #11226f;
+}

@@ -1,26 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Bahria College Karsaz</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Bootstrap 3 css-->
     <!--We'll not be using the Bootstrap 4 for a reason, so donot see the link I gave you on gitter :) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    
+
     <!--styles for main page, we'll create individual css files for 
     individual pages and will merge them to single styles.css later-->
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    
-    <!--Start coding here!-->
 
-    
+<body>
+
+    <div class="main">
+        <!--container for top right navbar -->
+        <div class="nav-container">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header-->
+        <div class="jumbotron header">
+            <img src="images/logo.jpg" alt="BCKK">
+            <h1>Bahria College Karsaz</h1>
+        </div>
+
+        <!--main navigation-->
+        <div class="navbar-default nav-container">
+            <div class="container-fluid">
+                <!--It will be displayed on mobile-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!--It will be displayed on desktop-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <!--Menu Item : 'About BCKz'-->
+                        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About BCKz <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'About BCKz'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Introduction</a></li>
+                                <li><a href="#">Mission</a></li>
+                                <li><a href="#">Aims & Objectives</a></li>
+                                <li><a href="#">Management & Administration</a></li>
+                                <li><a href="#">Organization</a></li>
+                                <li><a href="#">Discipline</a></li>
+                                <li><a href="#">Honour Code</a></li>
+                                <li><a href="#">College Timings</a></li>
+                                <li><a href="#">College Uniform</a></li>
+                            </ul>                        
+                        </li>
+                        <!--Menu Item : 'Junior Wing'-->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Junior Wing <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'Junior Wing'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Message From Vice Principal</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+                        </li>
+                        <!--Menu Item : 'Primary Wing'-->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary Wing <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'Primary Wing'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Message From Vice Principal</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+                        </li>
+                        <!--Menu Item : 'Sec & Hr.Sec'-->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sec & Hr.Sec <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'Sec & Hr.Sec'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Message From Vice Principal</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Facilities</a></li>
+                                <li><a href="#">Awards & Achievements</a></li>
+                            </ul>
+                        </li>
+                        <!--Menu Item : 'Cambridge Wing'-->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cambridge Wing <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'Cambridge Wing'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Message From Vice Principal</a></li>
+                                <li><a href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <!--Menu Item : 'Special Wing'-->
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Special Wing <span class="caret"></span></a>
+                            <!--Dropdown menu for Menu Item : 'Special Wing'-->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Message From Vice Principal</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <!--bootstrap javascript cdn-->
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--script for main page, we'll create individual js files for each page and will merge them to 
     single scripts.js file-->
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
+
 </html>
