@@ -1,7 +1,9 @@
 /*
 Styles For Main Page goes here
 */
-
+.main{
+    height: 100%;
+}
 /*navbar container*/
 .nav-container{
     background-color: #000059;
@@ -49,6 +51,9 @@ Styles For Main Page goes here
 }
 /*overrides in smaller screens*/
 @media only screen and (max-width: 768px){
+    .header h1{
+        padding: 0;
+    }
     .dropdown-menu a:hover{
         color: #fff !important;
     }
