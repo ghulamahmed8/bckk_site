@@ -14,6 +14,9 @@
     <!--styles for main page, we'll create individual css files for 
     individual pages and will merge them to single styles.css later-->
     <link rel="stylesheet" href="./css/main.css">
+
+    <!--slider styles-->
+    <link rel="stylesheet" href="./css/slider.css">
 </head>
 
 <body>
@@ -41,8 +44,7 @@
             <div class="container-fluid">
                 <!--It will be displayed on mobile-->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-                    data-target="#main-nav-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -67,7 +69,7 @@
                                 <li><a href="#">Honour Code</a></li>
                                 <li><a href="#">College Timings</a></li>
                                 <li><a href="#">College Uniform</a></li>
-                            </ul>                        
+                            </ul>
                         </li>
                         <!--Menu Item : 'Junior Wing'-->
                         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Junior Wing <span class="caret"></span></a>
@@ -121,6 +123,59 @@
                 </div>
             </div>
         </div>
+        <!-- Carousel/Slider -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators/dots on slider -->
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <!--copy and paste above li on each addition of carousel/slide item-->
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!--each item represent single slide-->
+                <div class="item active">
+                    <!--slider image-->
+                    <div class="fill" style="background-image:url('http://bckk.edu.pk/wp-content/uploads/2015/12/image2ab-comp.jpg');"></div>
+                    <!--caption-->
+                    <div class="carousel-caption">
+                        <h2>Higher Secondary & Cambridge Wing</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('http://bckk.edu.pk/wp-content/uploads/2015/12/EDDSC_0015.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2>Junior Wing</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('http://bckk.edu.pk/wp-content/uploads/2015/12/EDDSC_0099.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2>Special Wing</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('http://bckk.edu.pk/wp-content/uploads/2015/12/image1ab-comp.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2>Primary Wing</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- left/right Controls for Carousel/slider -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+        <!--carousel/slider ends-->
+
     </div>
 
 
