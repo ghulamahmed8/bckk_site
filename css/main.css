@@ -14,7 +14,8 @@ Styles For Main Page goes here
 }
 /*override default nav link hover and visited background*/
 .navbar-nav > li > a:hover,
-.navbar-nav > li > a:visited{
+.navbar-nav > li > a:visited,
+.navbar-nav > li > a:focus{
     background-color: #7C7D75 !important;
 }
 
@@ -49,6 +50,55 @@ Styles For Main Page goes here
     left: auto; 
     right: 0;
 }
+
+/*row width overflows the window*/
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar{
+    background-color: #fff;
+    
+    border: 0.5em solid #fff;
+}
+.sidebar .content{
+    padding: 1em;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.sidebar h2,
+.sidebar h3{
+    margin:0 0 1em 0;
+}
+/*left sidebar*/
+.left-sidebar .col-md-3{
+    padding: 0;
+}
+.left-sidebar .cite{
+    text-align: right;
+}
+.left-sidebar img{
+    width: 100%;
+    float: left;
+    margin-right: 1em;
+}
+
+/*fixed: facebook iframe overflows*/
+.right-sidebar .content{
+    overflow-x: auto;
+}
+/*footer*/
+footer{
+    background-color: #000059;
+    color: #fff;
+}
+footer p{
+    margin: 0;
+    padding: 1em;
+}
+footer .site-info p{
+    text-align: right;
+}
 /*overrides in smaller screens*/
 @media only screen and (max-width: 768px){
     .header h1{
@@ -63,5 +113,8 @@ Styles For Main Page goes here
     }
     .navbar-right li{
         display: inline-block;
+    }
+    footer .site-info p{
+        text-align: left;
     }
 } 
