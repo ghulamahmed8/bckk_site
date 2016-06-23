@@ -103,16 +103,13 @@ footer .site-info p{
 @media only screen and (max-width: 768px){
     .header h1{
         padding: 0;
+        display: block;
     }
     .dropdown-menu a:hover{
         color: #fff !important;
     }
-    .navbar-right{
-        float: right;    
+    .navbar-right{   
         margin: 0;
-    }
-    .navbar-right li{
-        display: inline-block;
     }
     footer .site-info p{
         text-align: left;
