@@ -1,3 +1,105 @@
 /*
 Styles For Main Page goes here
 */
+
+.navbar-left img {
+    padding:1px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 100%;
+      
+      margin:auto;
+  }
+  
+  .carousel-caption h2 {
+      background-color:rgba(0,0,0,0.4);
+  }
+  
+  .carousel {
+      margin-top:-20px;
+  }
+  
+  .navbar-brand span{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.2em;
+    
+  }
+  
+
+  .navbar-left img:hover{
+      opacity: 0.7;
+  }
+  
+ ul > li > a{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.1em;
+  }
+ 
+ .d-down > li > a{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1em;
+      
+ } 
+ 
+ .col-md-7{ background-color: #f8f8f8; }
+ 
+.sidebar-left p.princi-para{
+    width:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+.sidebar-left img{
+    margin-right:1em;
+    margin-bottom: 1em;
+}
+
+.sidebar-left h2{
+    margin-bottom:15px;
+}
+
+.content-p span{
+    float: right;
+  }
+
+
+.sidebar-left { margin-bottom: 100px; margin-right: 6%;}
+
+.notice-board h3{
+   text-align: center;
+   text-decoration: underline;
+}
+
+.notice-board a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.notice-board {
+    margin-bottom:7%;
+}
+
+#starter iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-bottom{
+    margin-top: 5%;
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+    display: block;
+}
+
+.footer-bottom p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:2% 0% 0.5% 2%;
+}
+
+.footer-bottom span{
+    float: right;
+    margin-right:1%;
+}
